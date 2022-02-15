@@ -19,55 +19,44 @@ strong{
     font-size: 25px;
 }
 
-header img{
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-
-}
-
 header{
     padding: 1rem;
     background-color: rgb(235, 253, 235);
     color: black;  
-    display: flex;
+    display: grid;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: center; 
     align-content: center;
     font-weight: bold;
+    justify-content: end;
 }
 
 nav ul{
-    background-size: cover;
+    background-size: 100%;
     display: flex;
     flex-direction: row;
     font-size: 2.4vh;
 }
 
-
 ul li{
     list-style: none;
-    margin: 0px 2.5vh;
+    margin: 0px 2.4vh;
 }
 
-
 main h2{
-    font-size: 3.3vh;
+    font-size: 3.7vh;
 }
 
 main p{
-    font-size: 2.3vh;
+    font-size: 2.5vh;
 }
 
 main h3{
-    font-size: 3.1vh;
+    font-size: 3.6vh;
 }
 
 main h4{
-    font-size: 2.5vh;
+    font-size: 3.6vh;
 }
 
 button a{
@@ -84,15 +73,9 @@ button a:hover{
 
 /*MENU*/
 .logo img{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    width: 100%;
+    width: 28vh;
+    display: block;
 }
-
-
 
 .menu li a:hover{
     transition: all .3s;
@@ -107,13 +90,13 @@ button a:hover{
     transition: opacity 1.5s;
     position: absolute;
     padding-top: 1rem;
-    padding-left: 0px;
+    text-align: center;
+
 }
 
 .submenu li a{
     padding: 10px;
     display: block;
-    margin-left: 0px;
     color: black;
     text-decoration: none;
 }
@@ -124,7 +107,6 @@ button a:hover{
 }
 
 /*INICIO*/
-
 .hero{
     display: grid;
     grid-template-columns: 1fr;
@@ -164,17 +146,64 @@ button a:hover{
     background-color: rgb(139, 204, 155);
 }
 
-.paquet p{ 
-    padding: 0 15px ;
+.paquet h4{
+    line-height: 50px;
+}
+
+.button a{
+    gap: 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.paquet { 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    text-align: center;
+}
+
+.paquet button{
+    text-align: center;
+    width: 30px;
+    animation: animacion 2s linear infinite;
+}
+
+.activ button{
+    animation: animacion 2s linear infinite;
+}
+
+@keyframes animacion{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6), 0 0 0 0 rgba(255, 255, 255, 0.6);
+    }
+    30%{
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0), 0 0 0 0 rgba(255, 255, 255, 0.6);
+    }
+    65%{
+        box-shadow: 0 0 0 20px rgb(235, 253, 235), 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, .6), 0 0 0 10px rgba(255, 255, 255, .6);
+    }
 }
 
 .activ p{
-    padding: 0 15px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    text-align: center;
+}
+
+.activ h4{
+    line-height: 40px;
 }
 
 .paquet,
 .paquet2{
-    height: 400px;
+    height: 100%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -182,27 +211,28 @@ button a:hover{
     flex-direction: column;
     gap: 25px;
     font-size: 2vh;
+    width: 100%;
 }
 
 .activ,
 .activ2{
-    height: 400px;
+    height: 100%;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 25px;
+    width: 100%;
 }
 
 .final__inicio{
-    
     margin-top: 4px;
     padding: 3rem;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     background-color: rgb(177, 199, 183);
 }
 
@@ -232,12 +262,12 @@ button a:hover{
     border-top: 3px solid rgb(11, 66, 24);
     border-bottom: 4px solid rgb(139, 204, 155);
 }
-
 .paq1 input{
     width: 100px;
     height: 2rem;
     margin-left: 240px;
     margin-bottom: 5rem;
+    font-size: 15px;
 }
 
 .paq2{
@@ -253,12 +283,12 @@ button a:hover{
     justify-content: center;
     border-bottom: 4px solid rgb(139, 204, 155);
 }
-
 .paq2 input{
     width: 100px;
     height: 2rem;
     margin-left: 240px;
     margin-bottom: 5rem;
+    font-size: 15px;
 }
 
 .paq3{
@@ -273,13 +303,14 @@ button a:hover{
     justify-content: center;
     border-bottom: 4px solid rgb(139, 204, 155);
 }
-
 .paq3 input{
     width: 100px;
     height: 2rem;
     margin-left: 240px;
     margin-bottom: 5rem;
+    font-size: 15px;
 }
+
 .paq4{
     display: grid;
     background-color: rgb(192, 228, 192);
@@ -297,7 +328,9 @@ button a:hover{
     height: 2rem;
     margin-left: 240px;
     margin-bottom: 5rem;
+    font-size: 15px;
 }
+
 .paq5{
     display: grid;
     background-color: rgb(192, 228, 192);
@@ -315,6 +348,7 @@ button a:hover{
     height: 2rem;
     margin-left: 240px;
     margin-bottom: 5rem;
+    font-size: 15px;
 }
 
 .paq6{
@@ -334,7 +368,9 @@ button a:hover{
     height: 2rem;
     margin-left: 240px;
     margin-bottom: 5rem;
+    font-size: 15px;
 }
+
 .paq7{
     display: grid;
     background-color: rgb(192, 228, 192);
@@ -352,7 +388,9 @@ button a:hover{
     height: 2rem;
     margin-left: 240px;
     margin-bottom: 5rem;
+    font-size: 15px;
 }
+
 .paq8{
     display: grid;
     background-color: rgb(192, 228, 192);
@@ -383,14 +421,13 @@ button a:hover{
     align-items: center;
     gap: 1rem;
     font-size: 18px;
-    color: black;
-    
+    color: black;  
 }
 
 .resto{
     display: grid;
     justify-content: center;
-    padding: 3rem;
+    padding: 2.5rem;
     background-color: rgb(192, 228, 192);
     flex-direction: column;
     align-items: center;
@@ -426,7 +463,7 @@ button a:hover{
     text-align: center;
     align-content: center;
     background-color: rgb(192, 228, 192);
-    padding: 6rem;
+    padding: 4rem;
     line-height: 3rem;
     width: 100%px;
     border-bottom: 4px solid white;
@@ -440,7 +477,7 @@ button a:hover{
     text-align: center;
     align-content: center;
     background-color: rgb(139, 204, 155);
-    padding: 6rem;
+    padding: 4rem;
     line-height: 3rem;
     border-bottom: 4px solid white;
 }
@@ -461,7 +498,7 @@ button a:hover{
     display: grid;
     justify-content: center;
     padding: 3rem;
-    background-color: rgb(192, 228, 192);
+    background-color: rgb(139, 204, 155);
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -478,20 +515,26 @@ button a:hover{
     text-align: center;
     display: grid;
     flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .deg{
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     background-color: rgb(139, 204, 155);
     margin: auto;
     text-align: center;
     line-height: 60px;
-    border-bottom: 3px solid white;
     align-items: center;
     align-content: center;
     text-align: center;
-    padding-top: 3vh;
+    padding: 4rem;
+    border: 4px solid rgb(11, 66, 24);
 }
 
 
@@ -568,7 +611,6 @@ button a:hover{
     background-color: rgb(139, 204, 155);
     padding: 4rem;
     line-height: 2.6rem;
-    border-bottom: 4px solid white;
 }
 
 .excursiones__bien{
@@ -577,15 +619,15 @@ button a:hover{
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: rgb(139, 204, 155);
-    padding-top: 2rem;
+    background-color: rgb(192, 228, 192);
+    padding: 3rem;
     line-height: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 4px solid white;
+    border-bottom: 4px solid rgb(235, 253, 235);
+    border-top: 4px solid rgb(235, 253, 235);
 }
 
 .excur__bien{
-    background-color: rgb(192, 228, 192);
+    background-color: rgb(139, 204, 155);
     width: 100%;
     margin: auto auto;
     text-align: center;
@@ -593,17 +635,18 @@ button a:hover{
     padding-bottom: 3rem;
     display: grid;
     grid-template-columns: auto auto;
+    gap: 3rem;
 }
 
 .exc__bien{
     width: 500px;
-    height: 400px;
-    background-color: rgb(139, 204, 155);
+    height: 100%;
+    background-color: rgb(192, 228, 192);
     margin: auto;
     text-align: center;
     line-height: 60px;
     border: 3px solid white;
-    padding-top: 1rem;
+    padding: 3rem;
 }
 
 .excursiones__aven{
@@ -612,30 +655,29 @@ button a:hover{
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: rgb(139, 204, 155);
-    padding-top: 2rem;
+    background-color: rgb(192, 228, 192);
+    padding: 3rem;
     line-height: 2rem;
-    padding-bottom: 2rem;
     border-bottom: 4px solid white;
     border-top: 4px solid white;
 }
 
 .aventura{
-    background-color: rgb(192, 228, 192);
+    background-color: rgb(139, 204, 155);
     width: 100%;
     margin: auto auto;
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0px 10px;
+    gap: 3rem;
+    padding: 3rem;
 }
 
 .avent{
     width: 600px;
-    height: 600px;
-    background-color: rgb(139, 204, 155);
+    height: 100%;
+    background-color: rgb(192, 228, 192);
     margin: auto;
     text-align: center;
     line-height: 50px;
@@ -645,7 +687,7 @@ button a:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 3rem;
+    padding: 2rem;
 }
 .cond{
     display: grid;
@@ -710,9 +752,7 @@ button a:hover{
     justify-content: center;
 }
 
-
 /*CONTACTO*/
-
 .contacto__fondo{
     background-color: rgb(139, 204, 155);
 }
@@ -758,7 +798,6 @@ button a:hover{
     margin: 0;
     padding: 1em;
 }
-
 
 .formulario form button,
 .formulario form input,
@@ -808,20 +847,48 @@ button a:hover{
 }
 
 /*BOTONES*/
-.button{
+.button__anim{
     text-decoration: none;
-    padding: 7px;
-    font-weight: 20;
-    font-size: 12px;
+    padding: .5rem;
+    font-weight: 40px;
+    font-size: 15px;
     color: black;
     background-color: rgb(235, 253, 235);
-    border-radius: 6px;
+    border-radius: 100px;
+    border: rgba(255, 255, 255) 2px solid;
+    transition: opacity 1.5s;
+    margin: 15px;
+}
+
+.button__contac{
+    text-decoration: none;
+    padding: 1rem;
+    font-weight: 40px;
+    font-size: 15px;
+    color: black;
+    background-color: rgb(235, 253, 235);
+    border-radius: 100px;
     border: black 2px solid;
     transition: opacity 1.5s;
+    margin: 15px;
+}
+
+.button{
+    text-decoration: none;
+    padding: 0 .5rem;
+    color: black;
+    background-color: rgb(139, 204, 155);
+    border-radius: 10px;
+    border: black 2px solid;
+    transition: opacity 1.5s;
+    margin: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 .button:hover{
-    color: rgb(34, 133, 59);
+    color: white;
     visibility: visible;
     opacity: 1;
     text-decoration: none;
@@ -927,6 +994,12 @@ button a:hover{
 }
 
 /*RESPONSIVE FOOTER*/
+@media(max-width: 1024px){
+    .footer__col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
 @media(max-width: 768px){
     .footer__col{
         width: 50%;
@@ -978,13 +1051,12 @@ button a:hover{
     padding: .7em;
     }
 }
-
-@media (max-width: 768px) {
+/*Inicio responsive*/
+@media (min-width: 1024px){
     header{
-        width: 100%;
         display: flex;
-        justify-content: center;
         gap: 25px;
+        justify-content: center;
     }
 
     .responsive__nav nav{
@@ -992,6 +1064,75 @@ button a:hover{
         flex-direction: column;
         align-items: center;
         align-content: center;
+        width: 100%;
+        justify-content: end;
+    }
+
+    .categorias{
+        margin: auto;
+        width: 100%;
+    }
+
+    .contenedor{
+        margin: auto;
+        padding: auto;
+        width: 100%;
+        height: 300px;
+        grid-column: 1fr 1fr;
+        grid-template-rows: repeat(4 auto);
+        font-size: 0.1px;
+    }
+
+    .paquet,
+    .paquet2{
+        display: flex;
+        justify-content: center;
+        padding-left: 5px ;
+        padding-right: 5px;
+        padding-top: 5px;
+    }
+
+    .activ,
+    .activ2{
+        display: flex;
+        justify-content: center;
+        padding-left: 1px ;
+        padding-right: 1px;
+    }
+
+    .bodegas{
+        margin: auto;
+        padding: auto;
+        width: 100%;
+    }
+
+    .deg{
+        width: 100%;
+    }
+
+    .aventura{
+        margin: auto;
+        padding: auto;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}  
+}
+@media (max-width: 768px) {
+    header{
+        width: 100%;
+        display: flex;
+        gap: 25px;
+        justify-content: start;
+    }
+
+    .responsive__nav nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        justify-content: end;
     }
 
     .categorias{
@@ -1048,14 +1189,21 @@ button a:hover{
     header{
         width: 100%;
         display: flex;
-        justify-content: center;
+    }
+
+    .responsive__nav nav{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        justify-content: end;
     }
 
     .categorias{
         margin: auto;
         width: 100%;
     }
-
 
     .contenedor{
         margin: auto;
