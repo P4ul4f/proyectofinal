@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uco Valley Experience</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    
+    <link rel="stylesheet" href="/css/estilos.css">
     <script src="https://kit.fontawesome.com/0ba8b1aab8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>
-        <img class="logo" src="/assets/img/logonav.jpg" alt="" width="210px">
-        <nav>
-            <ul class="menu">
-                <li> <a href="../index.html">INICIO</a> </li>
-                <li> <a href="paquetes.html">PAQUETES</a></li>
-                <li> <a href="#">ACTIVIDADES</a>
-                    <ul class="submenu"> 
-                        <li> <a href="./actividades/bodegas.html">BODEGAS</a></li>
-                        <li> <a href="./actividades/excursiones.html">EXCURSIONES</a></li>
-                    </ul>
-                </li>
-                <li> <a href="nosotros.html">NOSOTROS</a></li>
-                <li> <a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="nos">
-            <h1 class="nos__tit">¿QUIÉNES SOMOS?</h1>
-            <div class="nosotros">
-                <h2>NUESTRA EXPERIENCIA</h2>
-                <br>
-                <p>Uco Valley Experience es una web especializada en ofrecer escursiones en la provincia de Mendoza. <br> Nos diferenciamos del resto de las agencias de turismo receptivo online porque contamos con oficina física y teléfonos de guardia las 24 hs. en la Ciudad de Mendoza, para asistirlo durante toda su estadía.<br> El personal que compone nuestro staff reside en la provincia por lo tanto de turismo "local", con extensa experiencia y sino que además son graduados en la materia y cuentan con todas las certificaciones y autorizaciones necesarias. <br> La sede operativa se encuentra en la Avenida San Martín 387, Ciudad de Mendoza. Nuestra agencia esta aprobada e inscripta en el Ministerio de Turismo de la Nación. </p>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid"> 
+                <img class="navbar-brand" src="/assets/img/logonav-removebg-preview.png" class="img-fluid" width="270px" height="140px" alt="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            <div class="collapse navbar-collapse lg-auto" id="navbarSupportedContent" style="">
+                <ul class="navbar-nav md-auto">
+                    <li class="nav-link"><a class="nav-item" href="/index.html">INICIO</li>
+                    <li class="nav-item"><a class="nav-link" href="paquetes.html">PAQUETES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/actividades/actividades.html">ACTIVIDADES</a>
+                    <li class="nav-item"> <a class="nav-link" href="/paginas/nosotros.html">NOSOTROS</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/paginas/contacto.html">CONTACTO</a></li>
+                </ul>
             </div>
-            <div class="nos__img">
-                <img src="/assets/img/logodef.jpg" alt="" width="300vh"> 
+              </nav>
+        </div>
+        </header>
+
+<main>
+    <section>
+        <h1 class="nosotros-tit" style="padding: 40px;">¿QUIÉNES SOMOS?</h1>
+    <div class="nosotros-fondo">
+        <div class="nosotros" style="padding: 40px;" >
+            <h2 class="nosotros" style="padding-top: 0;">NUESTRA EXPERIENCIA</h2>
+            <br>
+            <p>Uco Valley Experience es una web especializada en ofrecer escursiones en la provincia de Mendoza. <br> Nos diferenciamos del resto de las agencias de turismo receptivo online porque contamos con oficina física y teléfonos de guardia las 24 hs. en la Ciudad de Mendoza, para asistirlo durante toda su estadía.<br> El personal que compone nuestro staff reside en la provincia por lo tanto de turismo "local", con extensa experiencia y sino que además son graduados en la materia y cuentan con todas las certificaciones y autorizaciones necesarias. <br> La sede operativa se encuentra en la Avenida San Martín 387, Ciudad de Mendoza. Nuestra agencia esta aprobada e inscripta en el Ministerio de Turismo de la Nación. </p>
+        </div>
+        <div class="row">
+            <div class="nos-img  col-xl-6 col-lg-12 col-sm-12 d-flex justify-content-end align-items-center text-center" style="width: 100%; padding: 40px;">
+                <img src="/assets/img/logodef-removebg-preview.png" alt="" width="400vh">
+            </div>
+            <div class="nos-img col-xl-6 col-lg-12 col-sm-12 d-flex justify-content-start align-items-center text-center" style="width: 100%; padding: 50px;">
                 <img src="../assets/img/logo-original.png" alt="" width="300vh">
             </div>
-        </section>
+        </div>
+    </div>
+    </section>
         
          
 

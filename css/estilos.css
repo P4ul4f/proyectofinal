@@ -6,59 +6,6 @@
     box-sizing: border-box;
 }
 
-html{
-    font-family: 'Montserrat', sans-serif;;
-}
-
-header a{
-    color: black;
-    text-decoration: none;
-}
-
-strong{
-    font-size: 25px;
-}
-
-header{
-    padding: 1rem;
-    background-color: rgb(235, 253, 235);
-    color: black;  
-    display: grid;
-    flex-direction: row;
-    align-items: center; 
-    align-content: center;
-    font-weight: bold;
-    justify-content: end;
-}
-
-nav ul{
-    background-size: 100%;
-    display: flex;
-    flex-direction: row;
-    font-size: 2.4vh;
-}
-
-ul li{
-    list-style: none;
-    margin: 0px 2.4vh;
-}
-
-main h2{
-    font-size: 3.7vh;
-}
-
-main p{
-    font-size: 2.5vh;
-}
-
-main h3{
-    font-size: 3.6vh;
-}
-
-main h4{
-    font-size: 3.6vh;
-}
-
 button a{
     text-decoration: none;
     color: black;
@@ -72,95 +19,41 @@ button a:hover{
 }
 
 /*MENU*/
-.logo img{
-    width: 28vh;
-    display: block;
-}
 
-.menu li a:hover{
-    transition: all .3s;
-    color: rgb(47, 167, 47);
-}
-
-.submenu{
-    display: block;
-    background: rgb(235, 253, 235);
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1.5s;
-    position: absolute;
-    padding-top: 1rem;
-    text-align: center;
-
-}
-
-.submenu li a{
-    padding: 10px;
-    display: block;
-    color: black;
-    text-decoration: none;
-}
-
-.menu li:hover .submenu{
-    visibility: visible;
-    opacity: 1;
+header{
+    font-size: 2.5vh;
 }
 
 /*INICIO*/
-.hero{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    justify-content: center;
-    background-color: rgb(139, 204, 155);
-    line-height: 3rem;
-    gap: 3rem;
+
+.img-principal{
+    object-fit: cover;
 }
 
-.text__princ{
-    text-align: center;
-    padding-bottom: 3rem;
+.texto-principal{
+    font-size: 2.5vh;
+    background-color: rgb(174, 191, 236);
+}
+.texto-principal h2{
+    font-size: 3.5vh;
 }
 
 .categorias{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    background-color: rgb(235, 253, 235);
-    padding: 2rem;
+    background-color: rgb(112, 145, 235);
+    border: 2px solid rgb(255, 255, 255);
+}
+.categorias h3{
+    font-size: 3.2vh;
 }
 
 .contenedor{
-    width: 100%;
-    max-width: 99%;
-    margin: 0px 10px;
-    display: grid;
-    gap: 4px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    flex-direction: row;
-}
-
-.contenedor > div{
-    background-color: rgb(139, 204, 155);
-}
-
-.paquet h4{
-    line-height: 50px;
+    background-color: rgb(174, 191, 236);
+    border: 2px solid white);
 }
 
 .button a{
     gap: 50px;
     height: 100%;
-    text-align: center;
-}
-
-.paquet { 
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
     text-align: center;
 }
 
@@ -189,592 +82,99 @@ button a:hover{
     }
 }
 
-.activ p{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    text-align: center;
-}
-
-.activ h4{
-    line-height: 40px;
-}
-
-.paquet,
-.paquet2{
-    height: 100%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 25px;
-    font-size: 2vh;
-    width: 100%;
-}
-
-.activ,
-.activ2{
-    height: 100%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 25px;
-    width: 100%;
-}
-
-.final__inicio{
-    margin-top: 4px;
-    padding: 3rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.5rem;
-    background-color: rgb(177, 199, 183);
+.final-inicio{
+    line-height: 30px;
+    background-color: rgb(196, 196, 196);
+    border-top: 2px solid white;
 }
 
 /*PAQUETES*/
-.paq__tit{
-    display: flex;
-    background-color: rgb(139, 204, 155);
-    justify-content: center;
-    font-size: 25px;
-    padding: 2rem;
-    color: black;
-    font-weight: bold;
-    border-top: 3px solid rgb(11, 66, 24);
+.paquete-tit{
+    background-color: rgb(224, 239, 247);
+    border: 3px solid white;
 }
 
-.paq1{
-    display: grid;
-    background-color: rgb(192, 228, 192);
-    height: 40vp;
-    padding-top: 5rem;
-    gap: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    border-top: 3px solid rgb(11, 66, 24);
-    border-bottom: 4px solid rgb(139, 204, 155);
-}
-.paq1 input{
-    width: 100px;
-    height: 2rem;
-    margin-left: 240px;
-    margin-bottom: 5rem;
-    font-size: 15px;
+.fondo-paquetes{
+    background-color: rgb(197, 211, 248);
 }
 
-.paq2{
-    display: grid;
-    background-color: rgb(192, 228, 192);
-    height: 40vp;
-    padding-top: 5rem;
-    gap: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 4px solid rgb(139, 204, 155);
-}
-.paq2 input{
-    width: 100px;
-    height: 2rem;
-    margin-left: 240px;
-    margin-bottom: 5rem;
-    font-size: 15px;
+/*ACTIVIDADES*/
+
+.actividades{
+    background-color: rgb(197, 211, 248);
 }
 
-.paq3{
-    display: grid;
-    background-color: rgb(192, 228, 192);
-    height: 40vp;
-    padding-top: 5rem;
-    gap: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    border-bottom: 4px solid rgb(139, 204, 155);
+.act-bodegas{
+    border: 3px solid rgba(13, 53, 185, 0.6);
 }
 
-.paq3 input{
-    width: 100px;
-    height: 2rem;
-    margin-left: 240px;
-    margin-bottom: 5rem;
-    font-size: 15px;
-}
-
-.paq4{
-    display: grid;
-    background-color: rgb(192, 228, 192);
-    height: 40vp;
-    padding-top: 5rem;
-    gap: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    border-bottom: 4px solid rgb(139, 204, 155);
-}
-.paq4 input{
-    width: 100px;
-    height: 2rem;
-    margin-left: 240px;
-    margin-bottom: 5rem;
-    font-size: 15px;
-}
-
-.paq5{
-    display: grid;
-    background-color: rgb(192, 228, 192);
-    height: 40vp;
-    padding-top: 5rem;
-    gap: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    border-bottom: 4px solid rgb(139, 204, 155);
-}
-.paq5 input{
-    width: 100px;
-    height: 2rem;
-    margin-left: 240px;
-    margin-bottom: 5rem;
-    font-size: 15px;
-}
-
-.paq6{
-    display: grid;
-    background-color: rgb(192, 228, 192);
-    height: 40vp;
-    padding-top: 5rem;
-    gap: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    border-bottom: 4px solid rgb(139, 204, 155);
-}
-.paq6 input{
-    width: 100px;
-    height: 2rem;
-    margin-left: 240px;
-    margin-bottom: 5rem;
-    font-size: 15px;
-}
-
-.paq7{
-    display: grid;
-    background-color: rgb(192, 228, 192);
-    height: 40vp;
-    padding-top: 5rem;
-    gap: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    border-bottom: 4px solid rgb(139, 204, 155);
-}
-.paq7 input{
-    width: 100px;
-    height: 2rem;
-    margin-left: 240px;
-    margin-bottom: 5rem;
-    font-size: 15px;
-}
-
-.paq8{
-    display: grid;
-    background-color: rgb(192, 228, 192);
-    height: 40vp;
-    padding-top: 5rem;
-    padding-bottom: 6rem;
-    gap: 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    border-bottom: 4px solid rgb(139, 204, 155);
-}
-.paq8 input{
-    width: 100px;
-    height: 2rem;
-    margin-left: 240px;
-    margin-bottom: 5rem;
+.act-excursiones{
+    border: 3px solid rgba(13, 53, 185, 0.6);
 }
 
 /*BODEGAS*/
-.activid{
-    display: grid;
-    justify-content: center;
-    padding: 2rem;
-    background-color: rgb(139, 204, 155);
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    font-size: 18px;
-    color: black;  
-}
-
-.resto{
-    display: grid;
-    justify-content: center;
-    padding: 2.5rem;
-    background-color: rgb(192, 228, 192);
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    font-size: 30px;
-    color: black;
-    border-bottom: 3px solid rgb(11, 66, 24);
-    border-top: 3px solid rgb(11, 66, 24);
-}
-
-.fondo__bod{
-    background-color: rgb(192, 228, 192);
-}
-
-.bodega1{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(139, 204, 155);
-    padding: 4rem;
-    line-height: 3rem;
-    border-bottom: 4px solid white;
-}
-
-.bodega2{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(192, 228, 192);
-    padding: 4rem;
-    line-height: 3rem;
-    width: 100%px;
-    border-bottom: 4px solid white;
-}
-
-.bodega3{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(139, 204, 155);
-    padding: 4rem;
-    line-height: 3rem;
-    border-bottom: 4px solid white;
-}
-.bodega4{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(192, 228, 192);
-    height: 40vp;
-    padding: 4rem;
-    line-height: 3rem;
-}
-
-.degust__tit{
-    display: grid;
-    justify-content: center;
-    padding: 3rem;
-    background-color: rgb(139, 204, 155);
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    font-size: 30px;
-    color: black;
-    border-top: 3px solid rgb(11, 66, 24);
-    border-bottom: 3px solid rgb(11, 66, 24);
-}
-
-.degust{
-    background-color: rgb(192, 228, 192);
-    width: 100%;
-    margin: auto auto;
-    text-align: center;
-    display: grid;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    gap: 3rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-.deg{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(139, 204, 155);
-    margin: auto;
-    text-align: center;
-    line-height: 60px;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    padding: 4rem;
-    border: 4px solid rgb(11, 66, 24);
-}
-
-
-
-/*ESCURSIONES*/
-
-.excurs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    color: rgb(3, 66, 18);
-    line-height: 3rem;
-    padding-top: 3rem;
-    background-color: rgb(139, 204, 155);
-}
-
-.excursiones1{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(139, 204, 155);
-    padding: 3rem;
-    line-height: 2.6rem;
-    border-bottom: 4px solid white;
-}
-.excursiones2{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(192, 228, 192);
-    padding: 4rem;
-    line-height: 2.6rem;
-    border-bottom: 4px solid white;
-}
-.excursiones3{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(139, 204, 155);
-    padding: 4rem;
-    line-height: 2.6rem;
-    border-bottom: 4px solid white;
-}
-.excursiones4{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(192, 228, 192);
-    padding: 4rem;
-    line-height: 2.6rem;
-    border-bottom: 4px solid white;
-}
-.excursiones5{
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    background-color: rgb(139, 204, 155);
-    padding: 4rem;
-    line-height: 2.6rem;
-}
-
-.excursiones__bien{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-color: rgb(192, 228, 192);
-    padding: 3rem;
-    line-height: 2rem;
-    border-bottom: 4px solid rgb(235, 253, 235);
-    border-top: 4px solid rgb(235, 253, 235);
-}
-
-.excur__bien{
-    background-color: rgb(139, 204, 155);
-    width: 100%;
-    margin: auto auto;
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 3rem;
-}
-
-.exc__bien{
-    width: 500px;
-    height: 100%;
-    background-color: rgb(192, 228, 192);
-    margin: auto;
-    text-align: center;
-    line-height: 60px;
+.bodegas-tit{
+    background-color: rgb(224, 239, 247);
     border: 3px solid white;
-    padding: 3rem;
 }
 
-.excursiones__aven{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-color: rgb(192, 228, 192);
-    padding: 3rem;
-    line-height: 2rem;
-    border-bottom: 4px solid white;
-    border-top: 4px solid white;
+.bodegas-fondo{
+    background-color: rgb(197, 211, 248);
 }
 
-.aventura{
-    background-color: rgb(139, 204, 155);
-    width: 100%;
-    margin: auto auto;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0px 10px;
-    gap: 3rem;
-    padding: 3rem;
+/*EXCURSIONES*/
+.actividades-tit{
+    background-color: rgb(224, 239, 247);
+}
+.excursiones-tit{
+    background-color: rgb(224, 239, 247);
+    border-top: 3px solid white;
 }
 
-.avent{
-    width: 600px;
-    height: 100%;
-    background-color: rgb(192, 228, 192);
-    margin: auto;
-    text-align: center;
-    line-height: 50px;
-    border: 3px solid white;height: 400px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2rem;
+.excursiones-fondo{
+    background-color: rgb(197, 211, 248);
+    border-top: 3px solid white;
 }
-.cond{
-    display: grid;
-    justify-content: start;
-    flex-direction: column;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 5rem;
-    padding-right: 35rem;
-    line-height: 35px;
-    text-align: start;
-    border-bottom: 3px solid rgb(156, 156, 156);
-    border-top: 3px solid rgb(156, 156, 156);
-    background-color: rgb(213, 223, 213);
+
+.condiciones{
+    background-color: rgb(196, 196, 196);
+    border-top: 3px solid white;
 }
+
 
 /*NOSOTROS*/
-
-.nos{
-    background-color: rgb(190, 231, 190);
-    border-bottom: 2px solid rgb(11, 66, 24);
-    width: 100%;
+.nosotros-fondo{
+    background-color: rgb(197, 211, 248);
 }
 
-.nos__tit{
-    display: grid;
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem 0;
-    align-content: center;
-    align-items: center;
-    color: black;
-    font-size: 35px;
-    font-weight: bold;
-    background-color: rgb(139, 204, 155);
-    border-bottom: 2px solid rgb(11, 66, 24);
-    border-top: 2px solid rgb(11, 66, 24);
+.nosotros h2{
+    font-size: 3.3vh;
 }
-
-.nosotros{
-    width: 100%;
-    display: grid;
-    justify-content: start;
-    flex-direction: column;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 5rem;
-    padding-right: 30vh;
-    line-height: 35px;
-    text-align: start;
-}
-
-.nos__img{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 6rem;
-    text-align: center;
-    gap: 5rem;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+.nosotros p{
+    font-size: 2.5vh;
 }
 
 /*CONTACTO*/
 .contacto__fondo{
-    background-color: rgb(139, 204, 155);
+    background-color: rgb(197, 211, 248);
 }
 
 .contacto{
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5rem;
+    padding: 50px;
 }
 
 .contacto__tit{
     text-align: center;
     font-size: 30px;
-    color: rgb(11, 66, 24);
     padding-bottom: 2rem;
     padding-top: 1rem;
 }
 
 .contact{
-    box-shadow: 0 0 20px 0 rgb(11, 66, 24, .6);
+    box-shadow: 0 0 20px 0 rgba(13, 53, 185, 0.6);
 }
 
 .contact > * { 
@@ -812,7 +212,7 @@ button a:hover{
 }
 
 .formulario form button{
-    background: rgb(63, 133, 81);
+    background: rgb(75, 104, 184);
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -821,14 +221,14 @@ button a:hover{
 
 .formulario form button:hover,
 .formulario form button:focus{
-    background: rgb(139, 204, 155);
-    color: rgb(11, 66, 24);
+    background: rgb(146, 164, 209);
+    color: rgb(30, 61, 145);
     transition: .8s ease-out;
     outline: 0;
 }
 
 .contact__info{
-    background-color: rgb(63, 133, 81);
+    background-color: rgb(75, 104, 184);
 }
 
 .contact__info h4,
@@ -854,9 +254,9 @@ button a:hover{
     font-weight: 40px;
     font-size: 15px;
     color: black;
-    background-color: rgb(235, 253, 235);
+    background-color: rgb(139, 204, 155);
     border-radius: 100px;
-    border: rgba(255, 255, 255) 2px solid;
+    border: none;
     transition: opacity 1.5s;
     margin: 15px;
 }
@@ -914,103 +314,57 @@ button a:hover{
 }
 
 /*FOOTER*/
-.footer{
-    background: rgb(235, 253, 235);
-    padding: 30px 0;
-    height: 100%;
+
+.site-footer{
+    padding: 5rem 0;
+    font-size: 20px;
 }
 
-.container{
-    max-width: 100%;
-    margin: auto;
-    margin-left: 10rem;
-    line-height: 2.5rem;
-    padding-top: 10px;
+.site-footer p:last-child{
+    margin-bottom: 0;
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.site-footer a{
+    color: rgb(16, 52, 168);
+    border-bottom: 1px solid transparent;
 }
 
-.footer ul{
-    list-style: none;
-}
-
-
-.footer__col{
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer__col{
-    font-size: 2.5vh;
+.site-footer a:hover{
     color: black;
-    text-transform: capitalize;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
+    border-bottom: 1px solid rgb(75, 104, 184, .2);
 }
 
-.footer__col h4{
-    padding-bottom: 2rem;
-}
-
-
-.footer__col ul li a {
-    font-size: 2.4vh;
-    text-transform: capitalize;
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
+.site-footer h2{
+    font-size: 25px;
+    margin-bottom: 28px;
+    letter-spacing: .05em;
     color: black;
-    transition: all 0.3s ease;
 }
 
-.footer__col ul li a:hover{
-    padding-left: 10px;
+.site-footer .footer-link li {
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 
-.footer__col .social__links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgb(139, 204, 155);
-    text-align: center;
-    margin: 0 10px 10px 0;
-    line-height: 40px;
+.footer-social a{
+    line-height: 0;
     border-radius: 50%;
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    color: rgb(20, 149, 209);
+}
+
+.footer-social a:hover {
+    background-color: rgb(20, 149, 209);
+    border-color: rgb(112, 145, 235);
     color: black;
-    transition: all 0.3s ease;
 }
 
-.footer__col .social__links a:hover{
-    color: rgb(139, 204, 155);
-    background-color: black;
-}
-
-.footer__col ul li{
-    font-size: 2.4vh;
-    text-transform: capitalize;
-}
-
-/*RESPONSIVE FOOTER*/
-@media(max-width: 1024px){
-    .footer__col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-@media(max-width: 768px){
-    .footer__col{
-        width: 50%;
-        margin-bottom: 30px;
-    }
-}
-@media(max-width: 425px){
-    .footer__col{
-        width: 100%;
-    }
+.footer-social .fab{
+    margin-top: 10px;
 }
 
 /*RESPONSIVE CONTACTO*/
@@ -1052,212 +406,3 @@ button a:hover{
     padding: .7em;
     }
 }
-/*Inicio responsive*/
-@media (min-width: 1024px){
-    header{
-        display: flex;
-        gap: 25px;
-        justify-content: center;
-    }
-
-    .responsive__nav nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        width: 100%;
-        justify-content: end;
-    }
-
-    .categorias{
-        margin: auto;
-        width: 100%;
-    }
-
-    .contenedor{
-        margin: auto;
-        padding: auto;
-        width: 100%;
-        height: 300px;
-        grid-column: 1fr 1fr;
-        grid-template-rows: repeat(4 auto);
-        font-size: 0.1px;
-    }
-
-    .paquet,
-    .paquet2{
-        display: flex;
-        justify-content: center;
-        padding-left: 5px ;
-        padding-right: 5px;
-        padding-top: 5px;
-    }
-
-    .activ,
-    .activ2{
-        display: flex;
-        justify-content: center;
-        padding-left: 1px ;
-        padding-right: 1px;
-    }
-
-    .bodegas{
-        margin: auto;
-        padding: auto;
-        width: 100%;
-    }
-
-    .deg{
-        width: 100%;
-    }
-
-    .aventura{
-        margin: auto;
-        padding: auto;
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-}  
-}
-@media (max-width: 768px) {
-    header{
-        width: 100%;
-        display: flex;
-        gap: 25px;
-        justify-content: start;
-    }
-
-    .responsive__nav nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        width: 100%;
-        justify-content: end;
-    }
-
-    .categorias{
-        margin: auto;
-        width: 100%;
-    }
-
-    .contenedor{
-        margin: auto;
-        padding: auto;
-        width: 100%;
-        height: 300px;
-        grid-column: 1fr 1fr;
-        grid-template-rows: repeat(4 auto);
-        font-size: 0.1px;
-    }
-
-    .paquet,
-    .paquet2{
-        display: flex;
-        justify-content: center;
-        padding-left: 5px ;
-        padding-right: 5px;
-        padding-top: 5px;
-    }
-
-    .activ,
-    .activ2{
-        display: flex;
-        justify-content: center;
-        padding-left: 1px ;
-        padding-right: 1px;
-    }
-
-    .bodegas{
-        margin: auto;
-        padding: auto;
-        width: 100%;
-    }
-
-    .deg{
-        width: 100%;
-    }
-
-    .aventura{
-        margin: auto;
-        padding: auto;
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-}  
-
-@media (min-width: 425px) {
-    header{
-        width: 100%;
-        display: flex;
-    }
-
-    .responsive__nav nav{
-        display: grid;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        width: 100%;
-        justify-content: end;
-    }
-
-    .categorias{
-        margin: auto;
-        width: 100%;
-    }
-
-    .contenedor{
-        margin: auto;
-        padding: auto;
-        width: 100%;
-        height: auto;
-        grid-column: 1fr 1fr;
-        grid-template-rows: repeat(4 auto);
-        font-size: 0.1px;
-    }
-
-    .paquet,
-    .paquet2{
-        display: flex;
-        justify-content: center;
-        padding-left: 1px ;
-        padding-right: 1px;
-    }
-
-    .activ,
-    .activ2{
-        display: flex;
-        justify-content: center;
-        padding-left: 1px ;
-        padding-right: 1px;
-    }
-
-    .nosotros{
-        width: 100%;
-    }
-
-    .bodegas{
-        margin: auto;
-        padding: auto;
-        width: 100%;
-    }
-
-    .excur__bien{
-        margin: auto;
-        padding: auto;
-        width: 100%;
-        grid-template-columns: 1fr; 
-    }
-    .deg{
-        width: 100%;
-    }
-
-    .aventura{
-        margin: auto;
-        padding: auto;
-        width: 100%;
-        grid-template-columns: 1fr;
-    }
-}
-
-

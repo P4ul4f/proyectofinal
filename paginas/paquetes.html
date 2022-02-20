@@ -1,140 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/estilos.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uco Valley Experience</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    
+    <link rel="stylesheet" href="/css/estilos.css">
     <script src="https://kit.fontawesome.com/0ba8b1aab8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img class="logo" src="/assets/img/logonav.jpg" alt="" width="210px">
-        <nav>
-            <ul class="menu">
-                <li> <a href="../index.html">INICIO</a> </li>
-                <li> <a href="./paquetes.html">PAQUETES</a></li>
-                <li> <a href="#">ACTIVIDADES</a> 
-                    <ul class="submenu">
-                        <li> <a href="./actividades/bodegas.html">BODEGAS</a></li>
-                        <li> <a href="./actividades/excursiones.html">EXCURSIONES</a></li>
-                    </ul>
-                </li>
-                <li> <a href="./nosotros.html">NOSOTROS
-                </a></li>
-                <li> <a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid"> 
+                <img class="navbar-brand" src="/assets/img/logonav-removebg-preview.png" class="img-fluid" width="270px" height="140px" alt="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            <div class="collapse navbar-collapse lg-auto" id="navbarSupportedContent" style="">
+                <ul class="navbar-nav md-auto">
+                    <li class="nav-link"><a class="nav-item" href="/index.html">INICIO</li>
+                    <li class="nav-item"><a class="nav-link" href="paquetes.html">PAQUETES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/actividades/actividades.html">ACTIVIDADES</a>
+                    <li class="nav-item"> <a class="nav-link" href="/paginas/nosotros.html">NOSOTROS</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/paginas/contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+              </nav>
+        </div>
+        </header>
 
     <main>
-        <section>
-            <div class="paq__tit">
+    <section class="fondo-paquetes">
+        <div class="paquete-tit text-center " style="padding: 30px;">
             <h1>PAQUETES</h1>
+        </div>
+    <div class="row">   
+        <div class="col-xl-6 col-lg-12 col-sm-12 d-flex justify-content-end align-items-center text-center" style="width: 100%; padding: 80px;">
+            <div class="card text-center" style="width: 28rem;">
+            <img src="https://i.pinimg.com/originals/9c/2a/10/9c2a10cd8b37a5db70734c5e767a1985.jpg" class="card-img-top" alt="" width="200px" height="300px">
+                <div class="card-body">
+                    <h3 class="card-title">MENDOZA CLÁSICO</h3>
+                    <h4>5 DÍAS - 4 NOCHES</h4>
+                    <p class="card-text">Alojamiento con desayuno + Traslados + Excursiones</p>
+                    <a href="#" class="btn btn-primary">Más info</a>
+                </div>
             </div>
-            <div class=paq1>
-                <h2>MENDOZA CLÁSICO</h2>
-                    <h3>3 NOCHES - 4 DÍAS</h3>
-                    <p>Alojamiento con desayuno + Traslados + Excursiones </p>
-                    <img src="https://i.pinimg.com/originals/9c/2a/10/9c2a10cd8b37a5db70734c5e767a1985.jpg" alt="" width="600px">
-                    <input class="button" type="button" value="Más info">
+        </div>
+        <div class="col-xl-6 col-lg-12 col-sm-12 d-flex justify-content-start align-items-center text-center" style="width: 100%; padding: 80px;">
+            <div class="card text-center" style="width: 28rem;">
+            <img src="../assets/img/nihuil1.jpg" width="200px" height="300px" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">MENDOZA TODO</h3>
+                    <h4>6 DÍAS - 5 NOCHES</h4>
+                    <p class="card-text">Alojamiento con desayuno + Traslados + Excursiones</p>
+                    <a href="#" class="btn btn-primary">Más info</a>
+                </div>
             </div>
-            <div class="paq2">
-                <h2>MENDOZA TODO</h2>
-                    <h3>6 NOCHES - 7 DÍAS</h3>
-                    <p>Alojamiento con desayuno en Mendoza <br> y San Rafael + Traslados + Excursiones</p>
-                    <img src="../assets/img/nihuil1.jpg" alt="" width="600px">
-                    <input class="button" type="button" value="Más info">
+        </div>
+    </div>
+
+    <div class="row">   
+        <div class="col-xl-6 col-lg-12 col-sm-12 d-flex justify-content-end align-items-center text-center" style="width: 100%; padding: 80px;">
+            <div class="card text-center" style="width: 28rem;">
+            <img src="../assets/img/mountainn.jpg" class="card-img-top" alt="" width="200px" height="300px">
+                <div class="card-body">
+                    <h3 class="card-title">CAMINOS DEL VINO</h3>
+                    <h4>7 DÍAS - 6 NOCHES</h4>
+                    <p class="card-text">Alojamiento con desayuno en Mendoza + Traslados + Full day bodegas con almuerzo</p>
+                    <a href="#" class="btn btn-primary">Más info</a>
+                </div>
             </div>
-            <div class="paq3">
-                <h2>CAMINOS DEL VINO</h2>
-                    <h3>2 NOCHES - 3 DÍAS</h3>
-                    <p>Alojamiento con desayuno en Mendoza +<br> Traslados +  Full day bodegas con almuerzo</p>
-                    <img src="../assets/img/mountainn.jpg" alt="" width="600px">
-                    <input class="button" type="button" value="Más info">
+        </div>
+        <div class="col-xl-6 col-lg-12 col-sm-12 d-flex justify-content-start align-items-center text-center" style="width: 100%; padding: 80px;">
+            <div class="card text-center" style="width: 28rem;">
+            <img src="../assets/img/Termas-Cacheuta-scaled.jpeg" width="200px" height="300px" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">TERMAS SPA & WINE</h3>
+                    <h4>4 NOCHES - 5 DÍAS</h4>
+                    <p class="card-text">Alojamiento con desayuno en Mendoza y Termas de Cacheuta + Traslados + Full day bodegas con almuerzo</p>
+                    <a href="#" class="btn btn-primary">Más info</a>
+                </div>
             </div>
-            <div class="paq4">
-                <h2>TERMAS SPA & WINE</h2>
-                    <h3>4 NOCHES - 5 DÍAS</h3>
-                    <p>Alojamiento con desayuno en Mendoza y Termas de <br> Cacheuta  + Traslados + Full day bodegas con almuerzo</p>
-                    <img src="../assets/img/Termas-Cacheuta-scaled.jpeg" alt="" width="600px">
-                    <input class="button" type="button" value="Más info">
+        </div>
+    </div>
+
+    <div class="row">   
+        <div class="col-xl-6 col-lg-12 col-sm-12 d-flex justify-content-end align-items-center text-center" style="width: 100%; padding: 80px;">
+            <div class="card text-center" style="width: 28rem;">
+            <img src="../assets/img/Bodega.jpg" class="card-img-top" alt="" width="200px" height="300px">
+                <div class="card-body">
+                    <h3 class="card-title">VINOS Y NATURALEZA</h3>
+                    <h4>4 DÍAS - 3 NOCHES</h4>
+                    <p class="card-text">Alojamiento con desayuno en Mendoza y en <br> Casa Petrini +  Traslados + Bodegas en Valle de Uco</p>
+                    <a href="#" class="btn btn-primary">Más info</a>
+                </div>
             </div>
-            <div class="paq5">
-                <h2>VINOS Y NATURALEZA</h2>
-                    <h3>3 NOCHES - 4 DÍAS</h3>
-                    <p>Alojamiento con desayuno en Mendoza y en <br> Casa Petrini +  Traslados + Bodegas en Valle de Uco</p>
-                    <img src="../assets/img/Bodega.jpg" alt="" width="600px">
-                    <input class="button" type="button" value="Más info"> 
+        </div>
+        <div class="col-xl-6 col-lg-12 col-sm-12 d-flex justify-content-start align-items-center text-center" style="width: 100%; padding: 80px;">
+            <div class="card text-center" style="width: 28rem;">
+            <img src="../assets/img/vino.png" width="200px" height="300px" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">CURSO ENÓFILO</h3>
+                    <h4>2 NOCHES - 3 DÍAS</h4>
+                    <p class="card-text">Alojamiento con desayuno en Mendoza + Traslados + Full day bodegas con almuerzo en Bodega Santa Julia</p>
+                    <a href="#" class="btn btn-primary">Más info</a>
+                </div>
             </div>
-            <div class="paq6">
-                <h2>CURSO ENÓFILO</h2>
-                    <h3>2 NOCHES - 3 DÍAS</h3>
-                    <p>Alojamiento con desayuno en Mendoza + Traslados <br> + Full day bodegas con almuerzo en Bodega Santa Julia</p>
-                    <img src="../assets/img/vino.png" alt="" width="600px">
-                    <input class="button" type="button" value="Más info">
+        </div>
+    </div>
+
+    <div class="row">   
+        <div class="col-xl-6 col-lg-12 col-sm-12 d-flex justify-content-end align-items-center text-center" style="width: 100%; padding: 80px;">
+            <div class="card text-center" style="width: 28rem;">
+            <img src="../assets/img/sanrafael-mendoza-med.jpg" class="card-img-top" alt="" width="200px" height="300px">
+                <div class="card-body">
+                    <h3 class="card-title">SAN RAFAEL</h3>
+                    <h4>4 DÍAS - 3 NOCHES</h4>
+                    <p class="card-text">Alojamiento con desayuno en San Rafael + Traslados <br> + Excursión Cañon del Atuel + Excursión Los Reyunos</p>
+                    <a href="#" class="btn btn-primary">Más info</a>
+                </div>
             </div>
-            <div class="paq7">
-                <h2>SAN RAFAEL</h2>
-                    <h3>3 NOCHES - 4 DÍAS</h3>
-                    <p>Alojamiento con desayuno en San Rafael + Traslados <br> + Excursión Cañon del Atuel + Excursión Los Reyunos</p>
-                    <img src="../assets/img/sanrafael-mendoza-med.jpg" alt="" width="600px">
-                    <input class="button" type="button" value="Más info">
+        </div>
+        <div class="col-xl-6 col-lg-12 col-sm-12 d-flex justify-content-start align-items-center text-center" style="width: 100%; padding: 80px;">
+            <div class="card text-center" style="width: 28rem;">
+            <img src="../assets/img/malargue.jpg" width="200px" height="300px" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h3 class="card-title">MALARGÜE</h3>
+                    <h4>5 NOCHES - 4 DÍAS</h4>
+                    <p class="card-text">Alojamiento con desayuno en Malargüe <br>+ Traslados + Excursión Payunia</p>
+                    <a href="#" class="btn btn-primary">Más info</a>
+                </div>
             </div>
-            <div class="paq8">
-                <h2>MALARGÜE</h2>
-                    <h3>3 NOCHES - 4 DÍAS</h3>
-                    <p>Alojamiento con desayuno en Malargüe <br>+ Traslados + Excursión Payunia</p>
-                    <img src="../assets/img/malargue.jpg" alt="" width="600px">
-                    <input class="button" type="button" value="Más info">
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
 
     </main>
     
-    <footer class="footer">
-        <div class="container">
-           <div class="row">
-               <div class="footer__col">
-                    <h4>UCO VALLEY EXPERIENCE</h4>
-                    <ul>
-                        <li><a href="/index.html">inicio</a></li>
-                        <li><a href="/paginas/paquetes.html">Paquetes</a></li>
-                        <li><a href="/paginas/actividades/bodegas.html">Bodegas</a></li>
-                        <li><a href="/paginas/actividades/excursiones.html">Excursiones</a></li>
-                        <li><a href="/paginas/nosotros.html">Nosotros</a></li>
-                        <li><a href="/paginas/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer__col">
-                    <h4>INFORMACIÓN DE CONTACTO</h4>
-                    <ul>
-                        <li> <i class="fas fa-map-marker-alt"></i>  Av. San Martín 387</li>
-                        <li><i class="fas fa-phone"></i>  777 777 777</li>
-                        <li><i class="fas fa-envelope-open-text"></i>   ventas@ucovalley.com</li>
-                    </ul>
-                </div>
-                <div class="footer__col">
-                    <h4>SEGUINOS</h4>
-                    <div class="social__links">
-                        <a href="#"> <i class="fab fa-facebook-f"></i></a>
-                        <a href="#"> <i class="fab fa-instagram"></i></a>
-                        <a href="#"> <i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="footer__col">
-                        <img src="/assets/img/logonav.jpg" alt="" width="250px">
-                </div> 
+<footer class="site-footer">
+    <div class="container" >
+        <div class="row mb-5">
+            <div class="col-md-3 mb-5">
+                <h4>UCO VALLEY EXPERIENCE</h4>
+                <p>Somos una empresa dedicada al turismo en Mendoza, en nuestra página podrás encontrar todos los beneficios que tenemos para ofrecerte.</p>
+            </div>
+    
+            <div class="col-md-3 mb-5" >
+                <h4>SECCIONES</h4>
+                <ul class="list-unstyled footer-link">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="/paginas/paquetes.html">Paquetes</a></li>
+                    <li><a href="/paginas/actividades/actividades.html">Actividades</a></li>
+                    <li><a href="/paginas/nosotros.html">Nosotros</a></li>
+                    <li><a href="/paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <div class="col-md-3 mb-5">
+                <h4>INFORMACIÓN</h4>
+                <ul class="list-unstyled footer-link">
+                    <li class="d-flex" style="padding-bottom: 20px;"> 
+                    <span class="me-3"><i class="fas fa-map-marker-alt"></i></span>  <span>Av. San Martín 387, Ciudad de Mendoza.</span>
+                    </li>
+                    <li class="d-flex" style="padding-bottom: 20px;"> 
+                    <span class="me-3"><i class="fas fa-phone"></i></span>  <span>777 777 777</span>
+                    </li>
+                    <li class="d-flex" style="padding-bottom: 20px;"> 
+                    <span class="me-3"><i class="fas fa-envelope"></i></span>  <span>ventas@ucovalley.com</span>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="col-md-3">
+                <h4>CONTACTANOS</h4>
+                <ul class="list-unstyled footer-link d-flex footer-social">
+                    <li>
+                        <a href="#"><span class="fab fa-facebook"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                    </li>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
 
-
+<script src="./js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

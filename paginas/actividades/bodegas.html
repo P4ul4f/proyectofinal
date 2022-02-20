@@ -1,85 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/estilos.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uco Valley Experience</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid.css">
+    
+    <link rel="stylesheet" href="/css/estilos.css">
     <script src="https://kit.fontawesome.com/0ba8b1aab8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>
-        <img class="logo" src="/assets/img/logonav.jpg" alt="" width="210px">
-        <nav>
-            <ul class="menu">
-                <li> <a href="/index.html">INICIO</a> </li>
-                <li><a href="../paquetes.html">PAQUETES</a></li>
-                <li> <a href="#">ACTIVIDADES</a>
-                    <ul class="submenu"> 
-                        <li> <a href="./bodegas.html">BODEGAS</a></li>
-                        <li> <a href="./excursiones.html">EXCURSIONES</a></li>
-                    </ul>
-                </li>
-                <li> <a href="../nosotros.html">NOSOTROS</a></li>
-                <li> <a href="../contacto.html">CONTACTO    </a></li>
-            </ul>
-        </nav>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid"> 
+                <img class="navbar-brand" src="/assets/img/logonav-removebg-preview.png" class="img-fluid" width="270px" height="140px" alt="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            <div class="collapse navbar-collapse lg-auto" id="navbarSupportedContent" style="">
+                <ul class="navbar-nav md-auto">
+                    <li class="nav-link"><a class="nav-item" href="/index.html">INICIO</li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/paquetes.html">PAQUETES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/paginas/actividades/actividades.html">ACTIVIDADES</a>
+                    <li class="nav-item"> <a class="nav-link" href="/paginas/nosotros.html">NOSOTROS</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/paginas/contacto.html">CONTACTO</a></li>
+                </ul>
+            </div>
+              </nav>
+        </div>
     </header>
 
     <main class="bodegas">
-        <div class="activid">
+        <div class="bodegas-tit text-center" style="padding: 30px; font-size: 4vh;">
             <h1>ACTIVIDADES</h1>    
         </div>
-                    <h2 class="resto">RESTAURANTES</h2> 
-                <div class="fondo__bod"> 
-                    <div class="bodega1">
-                        <h3>Bodega Santa Julia</h3>
-                            <p>Salida los días viernes a partir de las 9:00hs.</p>
-                            <h4>Visita a la bodega Santa Julia con almuerzo de 3 pasos incluido.</h4> <br>
-                            <p> <img src="/assets/img/bodega-santa-julia.webp" alt="" width="500px"> </p>
-                    </div>
-                    <div class="bodega2">
-                        <h3>Bodega Giminez Rilli</h3>
-                            <p>Salida los días sábados a partir de las 12:30hs.</p>
-                            <h4>Almuerzo de 3 pasos.</h4> <br>
-                            <img src="/assets/img/gimenez.jpg" alt="" width="500px"> <!--del menu-->
-                    </div>
-                    <div class="bodega3">
-                        <h3>Bodega Laureano Gomez</h3>
-                            <p>Salida los días viernes a partir de las 11:00hs.</p>
-                            <h4>Almuerzo de 5 pasos.</h4> <br>
-                            <p><img src="/assets/img/vivitunuyan-bodegalaureanogomez1.jpeg" alt="" width="500px">  </p>
-                    </div>
-                    <div class="bodega4">
-                        <h3>Bodega Alpasión</h3>
-                            <p>Salida los días jueves a partir de las 12:00hs.</p>
-                            <h4>Almuerzo de 4 pasos.</h4> <br>
-                            <p> <img src="/assets/img/alpasion-lodge.jpg" alt="" width="500px"> </p>
-                    </div>
-                </div> 
-            <h2 class="degust__tit">DEGUSTACIONES</h2>
-            <div class="degust">
-                <div class="deg">
-                    <h3>Bodega Benegas</h3>
-                        <p>Parada: 1:30 hs. Entrada incluida</p>
-                        <p><img src="/assets/img/deg1.jpg" alt="" width="500px" height="280px"></p> <!--del lugar-->
+        
+        <div class="bodegas-fondo"> 
+            <h2 class="resto text-center" style="padding-top: 60px; font-size: 4vh;">RESTAURANTES</h2> 
+            <div class="card-group" style="padding: 60px;">
+                <div class="card">
+                  <img src="/assets/img/bodega-santa-julia.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 3.3vh;">Bodega Santa Julia</h5>
+                    <p class="card-text" style="font-size: 2.2vh;">Visita a la bodega Santa Julia con almuerzo de 3 pasos incluido.</p>
+                    <p class="card-text" style="font-size: 2.1vh;"><small class="text-muted">Salida los días viernes a partir de las 9:00hs.</small></p>
+                  </div>
                 </div>
-                <div class="deg">
-                    <h3>Bodega Clos de los Siete</h3>
-                        <p>Parada: 1:30 hs. Entrada incluida</p>
-                        <p><img src="/assets/img/deg2.jpg" alt="" width="500px" height="280px"></p> <!--del lugar-->
+                <div class="card">
+                  <img src="/assets/img/gimenez.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 3.3vh;">Bodega Giminez Rilli</h5>
+                    <p class="card-text" style="font-size: 2.2vh;">Visita a la bodega Gimenez Rilli con almuerzo de 5 pasos incluido.</p>
+                    <p class="card-text" style="font-size: 2.1vh;"><small class="text-muted">Salida los días sábados a partir de las 12:30hs.</small></p>
+                  </div>
                 </div>
-                <div class="deg">
-                    <h3>Casa El Enemigo</h3>
-                        <p>Parada: 2 hs. Entrada incluida</p>
-                        <p><img src="/assets/img/deg3.jpg" alt="" width="500px" height="280px"></p> <!--del lugar-->
+                <div class="card">
+                  <img src="/assets/img/laureanogomez1 (1).jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" style="font-size: 3.3vh;">Bodega Laureano Gomez</h5>
+                    <p class="card-text" style="font-size: 2.2vh;">Visita a la bodega Laureano Gomez con almuerzo de 4 pasos incluido.</p>
+                    <p class="card-text" style="font-size: 2.1vh;"><small class="text-muted">Salida los días viernes a partir de las 11:00hs.</small></p>
+                  </div>
+                </div>
+              </div>
+
+
+        <div class="bodegas-fondo"> 
+        <h2 class="resto text-center" style="padding-top: 30px; font-size: 4vh;">DEGUSTACIONES</h2> 
+            <div class="card-group" style="padding: 60px; padding-bottom: 100px;">
+                <div class="card">
+                    <img src="/assets/img/deg1.jpg" class="card-img-top" alt="..." height="400vh" style="object-fit: cover;">
+                    <div class="card-body">
+                    <h5 class="card-title" style="font-size: 3.3vh;">Bodega Benegas</h5>
+                    <p class="card-text" style="font-size: 2.2vh;">Visita a la bodega Benegas con entrada incluida..</p>
+                    <p class="card-text" style="font-size: 2.1vh;"><small class="text-muted">Parada: 1:30 hs</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/assets/img/deg2.jpg" class="card-img-top" alt="..." height="400vh" style="object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 3.3vh;">Bodega Clos de los Siete</h5>
+                        <p class="card-text" style="font-size: 2.2vh;">Visita a la bodega Clos de los Siete con entrada incluida.</p>
+                        <p class="card-text" style="font-size: 2.1vh;"><small class="text-muted">Parada: 1:30 hs.</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/assets/img/deg3.jpg" class="card-img-top" alt="..." height="400vh" style="object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-size: 3.3vh;">Casa El Enemigo</h5>
+                        <p class="card-text" style="font-size: 2.2vh;">Visita a la bodega El Enemigo con entrada incluida.</p>
+                        <p class="card-text" style="font-size: 2.1vh;"><small class="text-muted">Parada: 2 hs.</small></p>
+                    </div>
                 </div>
             </div>
+
     </main>
 
     <footer class="footer">
