@@ -1,117 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uco Valley Experience</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
     
     <link rel="stylesheet" href="./css/estilos.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Uco Valley Experience</title>
     <script src="https://kit.fontawesome.com/0ba8b1aab8.js" crossorigin="anonymous"></script>
 </head>
 <body>
   
-    <header>
-        <div class="logo">
-        <img src="./assets/img/logonav.jpg" alt="" width="100%" height="100%">
+<header>
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid"> 
+            <img class="navbar-brand" src="/assets/img/logonav-removebg-preview.png" class="img-fluid" width="270px" height="140px" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+            <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-        <nav class="responsive__nav">
-            <ul class="menu">
-                <li> <a id="soy-ID" href="index.html">INICIO</a> </li>
-                <li> <a href="./paginas/paquetes.html">PAQUETES</a></li>
-                <li> <a href="#">ACTIVIDADES</a> 
-                    <ul class="submenu">
-                        <li> <a href="./paginas/actividades/bodegas.html">BODEGAS</a></li>
-                        <li> <a href="./paginas/actividades/excursiones.html">EXCURSIONES</a></li>
-                    </ul>
-                </li>
-                <li> <a href="./paginas/nosotros.html">NOSOTROS</a></li>
-                <li> <a href="./paginas/contacto.html">CONTACTO</a></li>
+        <div class="collapse navbar-collapse lg-auto" id="navbarSupportedContent" style="">
+            <ul class="navbar-nav md-auto">
+                <li class="nav-link"><a class="nav-item" href="index.html">INICIO</li>
+                <li class="nav-item"><a class="nav-link" href="/paginas/paquetes.html">PAQUETES</a></li>
+                <li class="nav-item"><a class="nav-link" href="/paginas/actividades/actividades.html">ACTIVIDADES</a>
+                <li class="nav-item"> <a class="nav-link" href="./paginas/nosotros.html">NOSOTROS</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/paginas/contacto.html">CONTACTO</a></li>
             </ul>
-        </nav> 
-    </header>
+        </div>
+    </nav>
+    </div>
+</header>
 
-    <main>
-        
-        <section class="hero">
-            <img class="img__princ" src="./assets/img/inicio.jpg" alt=""  width="100%" height="100%">
-            <div class="text__princ">
+<main>
+    <section class="texto-principal">
+        <img class="img-principal" src="./assets/img/inicio.jpg" alt="" width="100%" height="cover">
+        <div class="text-justify text-center" style="padding: 50px">
             <h2>¿ESTÁS LISTO PARA EMPEZAR TU VIAJE?</h2>
             <p>Descubrí los diferentes lugares en Mendoza y mirá todo lo que tiene para ofrecerte.</p> 
-            </div>
-        </section>
-            <div class="categorias">
-                <h3>CATEGORÍAS</h3>   
-            </div>
-        <div class="contenedor">
-            <div class="paquet">
-                <h4>PAQUETES</h4>
-                <p>En esta sección encontrarás todos los paquetes <br> que incluyen estadías, visitas, traslados y demás. </p>
-                <button class="button__anim"> <a href="./paginas/actividades/excursiones.html">IR</a></button>
-            </a>
-            </div>
-            <div class="paquet2">
-                <img src="./assets/img/la-imponente-vista-en-uno___a8GQ9c_x_720x0__1.jpg" alt="" width="100%">
-            </div>
         </div>
-        <div class="contenedor">
-            <div class="activ2">
-                <img src="./assets/img/Mountain-bike-Aventura-en-Mendoza-750x400.jpg" alt="" width="100%" height="100%"> 
-            </div>
-            <div class="activ">
-                <h4>ACTIVIDADES</h4>
-                <p>En las actividades tenemos dos secciones, bodegas donde podrás encontrar restaurantes y degustaciones. Y excursiones que incluyen aventuras y naturaleza.</p>
-                <button class="button__anim"><a href="./paginas/actividades/bodegas.html">BODEGAS</a></button>
-                <button class="button__anim"> <a href="./paginas/actividades/excursiones.html">EXCURSIONES</a></button>
-            </div>
-        </div>
-        <div class="final__inicio">
-            <h3>CONTANOS CUÁL ES TU IDEA</h3>
-            <h4>Armamos tu viaje</h4>
-            <p>A medida de tus necesidades</p>
-            <button class="button__contac"> <a href="./paginas/contacto.html">CONSULTA</a></button>
-        </div>    
-    </main>
+    </section>
+    
+    <div class="text-justify text-center categorias" style="padding: 35px;">
+        <h3>CATEGORÍAS</h3>   
+    </div>
 
-    <footer class="footer">
-        <div class="container">
-           <div class="row">
-               <div class="footer__col">
-                    <h4>UCO VALLEY EXPERIENCE</h4>
-                    <ul>
-                        <li><a href="/index.html">Inicio</a></li>
-                        <li><a href="/paginas/paquetes.html">Paquetes</a></li>
-                        <li><a href="/paginas/actividades/bodegas.html">Bodegas</a></li>
-                        <li><a href="/paginas/actividades/excursiones.html">Excursiones</a></li>
-                        <li><a href="/paginas/nosotros.html">Nosotros</a></li>
-                        <li><a href="/paginas/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer__col">
-                    <h4>INFORMACIÓN DE CONTACTO</h4>
-                    <ul>
-                        <li> <i class="fas fa-map-marker-alt"></i>  Av. San Martín 387</li>
-                        <li><i class="fas fa-phone"></i>  777 777 777</li>
-                        <li><i class="fas fa-envelope-open-text"></i>   ventas@ucovalley.com</li>
-                    </ul>
-                </div>
-                <div class="footer__col">
-                    <h4>SEGUINOS</h4>
-                    <div class="social__links">
-                        <a href="#"> <i class="fab fa-facebook-f"></i></a>
-                        <a href="#"> <i class="fab fa-instagram"></i></a>
-                        <a href="#"> <i class="fab fa-twitter"></i></a>
+    <div class="row contenedor" style="padding: 60px;">
+        <div class="col-xl-6 col-lg-6 col-sm-12 d-flex justify-content-center align-items-center text-center" >
+            <div class="card text-center text-justify " style="width: 38rem;">
+                <img src="./assets/img/la-imponente-vista-en-uno___a8GQ9c_x_720x0__1.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">PAQUETES</h5>
+                        <p class="card-text">En esta sección encontrarás todos los paquetes que incluyen estadías, visitas, traslados y demás.</p>
+                        <button class="button__anim"> <a href="./paginas/actividades/excursiones.html">IR</a></button>
                     </div>
                 </div>
-                <div class="footer__col">
-                        <img src="/assets/img/logonav.jpg" alt="" width="250px">
-                </div> 
+            </div>
+        <div class="col-xl-6 col-lg-6 col-sm-12 d-flex justify-content-center align-items-center text-center">
+            <div class="card text-center text-justify" style="width: 34rem">
+                <img src="./assets/img/Mountain-bike-Aventura-en-Mendoza-750x400.jpg" class="card-img-top img-fluid" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ACTIVIDADES</h5>
+                        <p class="card-text">En las actividades tenemos dos secciones, bodegas donde podrás encontrar restaurantes y degustaciones. Y excursiones que incluyen aventuras y naturaleza.</p>
+                        <button class="button__anim"> <a href="./paginas/actividades/excursiones.html">IR</a></button>
+                    </div>
             </div>
         </div>
-    </footer>
-    
+    </div>
+
+    <div class="final-inicio text-center justify-content-center" style="padding: 70px;">
+        <h3>CONTANOS CUÁL ES TU IDEA</h3>
+        <h4>Armamos tu viaje</h4>
+        <p>A medida de tus necesidades</p>
+        <button class="button__contac"> <a href="./paginas/contacto.html">CONSULTA</a></button>
+    </div>    
+</main>
+
+<footer class="site-footer">
+    <div class="container" >
+        <div class="row mb-5">
+            <div class="col-md-3 mb-5">
+                <h4>UCO VALLEY EXPERIENCE</h4>
+                <p>Somos una empresa dedicada al turismo en Mendoza, en nuestra página podrás encontrar todos los beneficios que tenemos para ofrecerte.</p>
+            </div>
+
+            <div class="col-md-3 mb-5" >
+                <h4>SECCIONES</h4>
+                <ul class="list-unstyled footer-link">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="/paginas/paquetes.html">Paquetes</a></li>
+                    <li><a href="/paginas/actividades/actividades.html">Actividades</a></li>
+                    <li><a href="/paginas/nosotros.html">Nosotros</a></li>
+                    <li><a href="/paginas/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-5">
+                <h4>INFORMACIÓN</h4>
+                <ul class="list-unstyled footer-link">
+                    <li class="d-flex" style="padding-bottom: 20px;"> 
+                        <span class="me-3"><i class="fas fa-map-marker-alt"></i></span>  <span>Av. San Martín 387, Ciudad de Mendoza.</span>
+                    </li>
+                    <li class="d-flex" style="padding-bottom: 20px;"> 
+                        <span class="me-3"><i class="fas fa-phone"></i></span>  <span>777 777 777</span>
+                    </li>
+                    <li class="d-flex" style="padding-bottom: 20px;"> 
+                        <span class="me-3"><i class="fas fa-envelope"></i></span>  <span>ventas@ucovalley.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4>CONTACTANOS</h4>
+                <ul class="list-unstyled footer-link d-flex footer-social">
+                    <li>
+                        <a href="#"><span class="fab fa-facebook"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fab fa-twitter"></span></a>
+                    </li>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./js/bootstrap.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
