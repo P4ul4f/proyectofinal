@@ -12,10 +12,18 @@ button a{
 }
 
 button a:hover{
-    color: rgb(34, 133, 59);
+    color: black;
     visibility: visible;
     opacity: 1;
     text-decoration: none;
+}
+
+main h1{
+    font-size: 4.5vh;
+}
+
+main h2{
+    font-size: 4vh;
 }
 
 /*MENU*/
@@ -24,6 +32,25 @@ header{
     font-size: 2.5vh;
 }
 
+header a:hover{
+    text-decoration: none;
+    color: rgba(48, 99, 35, 0.5);
+}
+
+header li:hover{
+    color: rgba(48, 99, 35);
+}
+
+.navbar{
+    width: 100%;
+}
+
+.nav-item{
+    color: rgb(29, 150, 59);
+}
+.nav-color{
+    background-color: aqua;
+}
 /*INICIO*/
 
 .img-principal{
@@ -32,29 +59,45 @@ header{
 
 .texto-principal{
     font-size: 2.5vh;
-    background-color: rgb(174, 191, 236);
+    background-color: rgb(146, 207, 131);
 }
 .texto-principal h2{
     font-size: 3.5vh;
 }
 
 .categorias{
-    background-color: rgb(112, 145, 235);
+    background-color: rgb(184, 235, 172);
     border: 2px solid rgb(255, 255, 255);
 }
 .categorias h3{
-    font-size: 3.2vh;
+    font-size: 3.5vh;
 }
 
 .contenedor{
-    background-color: rgb(174, 191, 236);
-    border: 2px solid white);
+    background-color: rgb(146, 207, 131);
 }
 
-.button a{
-    gap: 50px;
-    height: 100%;
-    text-align: center;
+.card-title{
+    font-size: 3.3vh;
+}
+
+.card-desc{
+    font-size: 2.7vh;
+}
+
+.card-text{
+    font-size: 2.4vh;
+}
+
+.carta-paquetes{
+    background-color: rgb(146, 207, 131);
+    border: none;
+}
+
+.hover-cartas :hover{
+    background-color: rgb(184, 235, 172);
+    transition: all .5s;
+    opacity: 1;
 }
 
 .paquet button{
@@ -63,88 +106,139 @@ header{
     animation: animacion 2s linear infinite;
 }
 
-.activ button{
-    animation: animacion 2s linear infinite;
+.button__anim:hover{
+    background-color: rgba(93, 158, 77, 0.5);
+    border: 2px solid white;
+    transition: all 0.8s;
 }
 
-@keyframes animacion{
-    0%{
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6), 0 0 0 0 rgba(255, 255, 255, 0.6);
-    }
-    30%{
-        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0), 0 0 0 0 rgba(255, 255, 255, 0.6);
-    }
-    65%{
-        box-shadow: 0 0 0 20px rgb(235, 253, 235), 0 0 0 20px rgba(255, 255, 255, 0);
-    }
-    100%{
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, .6), 0 0 0 10px rgba(255, 255, 255, .6);
-    }
+.button__anim a:hover{
+    background-color: rgb(93, 158, 77, 0.5);
+    transition: all 0.8s;
 }
+
+
 
 .final-inicio{
     line-height: 30px;
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(218, 216, 216);
     border-top: 2px solid white;
+}
+
+.final-inicio h3{
+    font-size: 3vh;
+}
+
+.final-inicio h4{
+    font-size: 2.6vh;
+}
+
+.final-inicio p{
+    font-size: 2.2vh;
 }
 
 /*PAQUETES*/
 .paquete-tit{
-    background-color: rgb(224, 239, 247);
-    border: 3px solid white;
+    background-color: rgb(184, 235, 172);
+    border-bottom: 3px solid white;
 }
 
 .fondo-paquetes{
-    background-color: rgb(197, 211, 248);
+    background-color: rgb(146, 207, 131);
+}
+
+.card-img-top{
+    border-radius: 100%;
+}
+
+.paquetes-cartas{
+    background-color: rgb(146, 207, 131);
+    border: none;
+    padding: 30px;
+}
+
+.paquetes-cartas:hover{
+    background-color: rgba(255, 255, 255, 0.514);
+    border: 3px solid rgba(255, 255, 255, 0.514);
+}
+
+.button-paquete{
+    background-color: rgba(255, 255, 255, 0.514);
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+.button-paquete:hover{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(146, 207, 131, 0.589);
+    border: 1px solid rgb(93, 158, 77);
+    text-align: center;
+    transition: all .5s;
 }
 
 /*ACTIVIDADES*/
-
-.actividades{
-    background-color: rgb(197, 211, 248);
+.act-fondo{
+    background-color: rgb(184, 235, 172);
 }
 
-.act-bodegas{
-    border: 3px solid rgba(13, 53, 185, 0.6);
+.carta-bodega{
+    box-shadow: 0 0 30px 0 rgb(48, 116, 31);
 }
 
-.act-excursiones{
-    border: 3px solid rgba(13, 53, 185, 0.6);
+.carta-exc{
+    box-shadow: 0 0 30px 0 rgb(48, 116, 31);
 }
 
 /*BODEGAS*/
 .bodegas-tit{
-    background-color: rgb(224, 239, 247);
+    background-color: rgb(184, 235, 172);
     border: 3px solid white;
 }
 
 .bodegas-fondo{
-    background-color: rgb(197, 211, 248);
+    background-color: rgb(146, 207, 131);
+}
+
+.bodega-link {
+    color: black;
+}
+
+.bodega-link:hover{
+    color: black;
+    text-decoration: none;
+    background-color: rgb(219, 219, 219);
+    transition: all 0.5s;
 }
 
 /*EXCURSIONES*/
 .actividades-tit{
-    background-color: rgb(224, 239, 247);
-}
-.excursiones-tit{
-    background-color: rgb(224, 239, 247);
-    border-top: 3px solid white;
+    background-color: rgb(184, 235, 172);
 }
 
 .excursiones-fondo{
-    background-color: rgb(197, 211, 248);
+    background-color: rgb(146, 207, 131);
     border-top: 3px solid white;
 }
 
 .condiciones{
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(218, 216, 216);
     border-top: 3px solid white;
 }
 
 
 /*NOSOTROS*/
+.nosotros-tit{
+    background-color: rgb(184, 235, 172);
+    border-bottom: 3px solid white;
+}
+
 .nosotros-fondo{
-    background-color: rgb(197, 211, 248);
+    background-color: rgb(146, 207, 131);
 }
 
 .nosotros h2{
@@ -156,7 +250,7 @@ header{
 
 /*CONTACTO*/
 .contacto__fondo{
-    background-color: rgb(197, 211, 248);
+    background-color: rgb(200, 238, 192);
 }
 
 .contacto{
@@ -174,7 +268,7 @@ header{
 }
 
 .contact{
-    box-shadow: 0 0 20px 0 rgba(13, 53, 185, 0.6);
+    box-shadow: 0 0 30px 0 rgba(48, 99, 35, 0.5);
 }
 
 .contact > * { 
@@ -182,7 +276,7 @@ header{
 }
 
 .formulario{
-    background-color: rgb(222, 245, 222);
+    background-color: white;
 }
 
 .formulario form{
@@ -212,7 +306,7 @@ header{
 }
 
 .formulario form button{
-    background: rgb(75, 104, 184);
+    background: rgb(146, 207, 131);
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -221,14 +315,14 @@ header{
 
 .formulario form button:hover,
 .formulario form button:focus{
-    background: rgb(146, 164, 209);
-    color: rgb(30, 61, 145);
+    background: rgb(172, 214, 164);
+    color: rgb(69, 122, 56);
     transition: .8s ease-out;
     outline: 0;
 }
 
 .contact__info{
-    background-color: rgb(75, 104, 184);
+    background-color: rgb(146, 207, 131);
 }
 
 .contact__info h4,
@@ -249,36 +343,34 @@ header{
 
 /*BOTONES*/
 .button__anim{
+    padding: 10px;
+    border-radius: 50%;
     text-decoration: none;
-    padding: .5rem;
-    font-weight: 40px;
-    font-size: 15px;
-    color: black;
-    background-color: rgb(139, 204, 155);
-    border-radius: 100px;
-    border: none;
-    transition: opacity 1.5s;
-    margin: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
 }
 
 .button__contac{
     text-decoration: none;
-    padding: 1rem;
-    font-weight: 40px;
-    font-size: 15px;
+    border-radius: 10%;
+    padding: 6px;
+    background-color: white;
+    border: 2.3px solid black;
+}
+
+.button__contac:hover{
+    background-color: rgba(146, 207, 131, 0.589);
+    border: 2.3px solid rgba(93, 158, 77);
+}
+
+.button__contac a:hover{
     color: black;
-    background-color: rgb(235, 253, 235);
-    border-radius: 100px;
-    border: black 2px solid;
-    transition: opacity 1.5s;
-    margin: 15px;
 }
 
 .button{
     text-decoration: none;
     padding: 0 .5rem;
     color: black;
-    background-color: rgb(139, 204, 155);
     border-radius: 10px;
     border: black 2px solid;
     transition: opacity 1.5s;
@@ -315,57 +407,6 @@ header{
 
 /*FOOTER*/
 
-.site-footer{
-    padding: 5rem 0;
-    font-size: 20px;
-}
-
-.site-footer p:last-child{
-    margin-bottom: 0;
-}
-
-.site-footer a{
-    color: rgb(16, 52, 168);
-    border-bottom: 1px solid transparent;
-}
-
-.site-footer a:hover{
-    color: black;
-    border-bottom: 1px solid rgb(75, 104, 184, .2);
-}
-
-.site-footer h2{
-    font-size: 25px;
-    margin-bottom: 28px;
-    letter-spacing: .05em;
-    color: black;
-}
-
-.site-footer .footer-link li {
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-.footer-social a{
-    line-height: 0;
-    border-radius: 50%;
-    margin: 0 5px 5px 0;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    display: inline-block;
-    color: rgb(20, 149, 209);
-}
-
-.footer-social a:hover {
-    background-color: rgb(20, 149, 209);
-    border-color: rgb(112, 145, 235);
-    color: black;
-}
-
-.footer-social .fab{
-    margin-top: 10px;
-}
 
 /*RESPONSIVE CONTACTO*/
 
@@ -388,7 +429,7 @@ header{
     }
 }
 
-@media (min-width: 470px){
+@media (min-width: 545px){
     .contacto main {
         padding: 0 4rem;
         width: 100%;
