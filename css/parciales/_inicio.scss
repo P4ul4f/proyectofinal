@@ -1,0 +1,67 @@
+.texto-principal{
+    font-size: 2.5vh;
+    background-color: rgb(146, 207, 131);
+
+    .texto-principal h2{
+        font-size: 3.5vh;
+    }
+
+}
+
+.img-principal{
+    object-fit: cover;
+}
+
+.categorias{
+    background-color: rgb(184, 235, 172);
+    border: 2px solid rgb(255, 255, 255);
+
+    .categorias h3{
+        font-size: 3.5vh;
+    }
+}
+
+.contenedor{
+    background-color: rgb(146, 207, 131);
+}
+
+.hover-cartas :hover{
+    background-color: rgb(184, 235, 172);
+    transition: all .5s;
+    opacity: 1;
+}
+
+.card-paquetes{
+    background-color: rgb(146, 207, 131);
+    border: none;
+}
+
+.card-title{
+    font-size: 3.3vh;
+}
+
+.card-text{
+    font-size: 2.4vh;
+}
+
+.card-desc{
+    font-size: 2.7vh;
+}
+
+.final-inicio{
+    line-height: 30px;
+    background-color: rgb(218, 216, 216);
+    border-top: 2px solid white;
+
+    .final-inicio h3{
+    font-size: 3vh;
+    }
+
+        .final-inicio h4{
+        font-size: 2.6vh;
+        }
+
+            .final-inicio p{
+            font-size: 2.2vh;
+            }
+}
