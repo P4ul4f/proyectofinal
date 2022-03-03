@@ -1,0 +1,37 @@
+@media (min-width: 700px){
+    .contacto main {
+        padding: 0 4rem;
+        width: 100%;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact > * {
+        padding: 2em;
+    }
+    .contact__info h4,
+    .contact__info ul,
+    .contact__info p{
+    padding: .7em;
+    }
+}
+
+@media (min-width: 545px){
+    .contacto main {
+        padding: 0 4rem;
+        width: 100%;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact > * {
+        padding: 2em;
+    }
+    .contact__info h4,
+    .contact__info ul,
+    .contact__info p{
+    padding: .7em;
+    }
+}

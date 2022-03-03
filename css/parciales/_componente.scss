@@ -1,0 +1,121 @@
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+button a:hover{
+    color: black;
+    visibility: visible;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.button-paquete{
+    background-color: rgba(255, 255, 255, 0.514);
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+.button-paquete:hover{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(146, 207, 131, 0.589);
+    border: 1px solid rgb(93, 158, 77);
+    text-align: center;
+    transition: all .5s;
+}
+
+.formulario form button{
+    background: rgb(146, 207, 131);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    color: black;
+}
+
+.formulario form button:hover,
+.formulario form button:focus{
+    background: rgb(172, 214, 164);
+    color: rgb(69, 122, 56);
+    transition: .8s ease-out;
+    outline: 0;
+}
+
+.button__anim{
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid white;
+}
+
+.button__contac{
+    text-decoration: none;
+    border-radius: 10%;
+    padding: 6px;
+    background-color: white;
+    border: 2.3px solid black;
+}
+
+.button__contac:hover{
+    background-color: rgba(146, 207, 131, 0.589);
+    border: 2.3px solid rgb(94, 158, 77);
+}
+
+.button__contac a:hover{
+    color: black;
+}
+
+.button{
+    text-decoration: none;
+    padding: 0 .5rem;
+    color: black;
+    border-radius: 10px;
+    border: black 2px solid;
+    transition: opacity 1.5s;
+    margin: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.button:hover{
+    color: white;
+    visibility: visible;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.button__cont{
+    text-decoration: none;
+    padding: 7px;
+    font-weight: 20;
+    font-size: 15px;
+    color: black;
+    background-color: rgb(187, 184, 184);
+    border-radius: 6px;
+    border: 2px solid  black;
+    transition: opacity 1.5s;
+}
+
+.button__cont:hover{
+    color: white;
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn-footer{
+    background-color: rgb(146, 207, 131);
+    padding: 5px;
+    border: 1px solid rgb(80, 133, 66);
+    border-radius: 5%;
+}
+
+.btn-footer:hover{
+    border: 1px solid black;
+    background-color: rgb(175, 216, 165);
+}

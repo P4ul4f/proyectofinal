@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+button a {
+  text-decoration: none;
+  color: black; }
+
+button a:hover {
+  color: black;
+  visibility: visible;
+  opacity: 1;
+  text-decoration: none; }
+
+.button-paquete {
+  background-color: rgba(255, 255, 255, 0.514);
+  padding: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  justify-content: center; }
+
+.button-paquete:hover {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(146, 207, 131, 0.589);
+  border: 1px solid #5d9e4d;
+  text-align: center;
+  transition: all .5s; }
+
+.formulario form button {
+  background: #92cf83;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  color: black; }
+
+.formulario form button:hover,
+.formulario form button:focus {
+  background: #acd6a4;
+  color: #457a38;
+  transition: .8s ease-out;
+  outline: 0; }
+
+.button__anim {
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: white;
+  border: 2px solid white; }
+
+.button__contac {
+  text-decoration: none;
+  border-radius: 10%;
+  padding: 6px;
+  background-color: white;
+  border: 2.3px solid black; }
+
+.button__contac:hover {
+  background-color: rgba(146, 207, 131, 0.589);
+  border: 2.3px solid #5e9e4d; }
+
+.button__contac a:hover {
+  color: black; }
+
+.button {
+  text-decoration: none;
+  padding: 0 .5rem;
+  color: black;
+  border-radius: 10px;
+  border: black 2px solid;
+  transition: opacity 1.5s;
+  margin: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%; }
+
+.button:hover {
+  color: white;
+  visibility: visible;
+  opacity: 1;
+  text-decoration: none; }
+
+.button__cont {
+  text-decoration: none;
+  padding: 7px;
+  font-weight: 20;
+  font-size: 15px;
+  color: black;
+  background-color: #bbb8b8;
+  border-radius: 6px;
+  border: 2px solid  black;
+  transition: opacity 1.5s; }
+
+.button__cont:hover {
+  color: white;
+  visibility: visible;
+  opacity: 1; }
+
+.btn-footer {
+  background-color: #92cf83;
+  padding: 5px;
+  border: 1px solid #508542;
+  border-radius: 5%; }
+
+.btn-footer:hover {
+  border: 1px solid black;
+  background-color: #afd8a5; }
+
+header {
+  font-size: 2.5vh; }
+
+header li:hover {
+  color: #336926; }
+
+header a:hover {
+  text-decoration: none;
+  color: rgba(48, 99, 35, 0.5); }
+
+.navbar {
+  width: 100%; }
+
+.nav-item {
+  color: #1d963b; }
+
+main h1 {
+  font-size: 4.5vh; }
+
+main h2 {
+  font-size: 4vh; }
+
+.img-principal {
+  object-fit: cover; }
+
+.texto-principal {
+  font-size: 2.5vh;
+  background-color: #92cf83; }
+
+.texto-principal h2 {
+  font-size: 3.5vh; }
+
+.categorias {
+  background-color: #b8ebac;
+  border: 2px solid white; }
+
+.categorias h3 {
+  font-size: 3.5vh; }
+
+.contenedor {
+  background-color: #92cf83; }
+
+.card-title {
+  font-size: 3.3vh; }
+
+.card-desc {
+  font-size: 2.7vh; }
+
+.card-text {
+  font-size: 2.4vh; }
+
+.card-paquetes {
+  background-color: #92cf83;
+  border: none; }
+
+.hover-cartas :hover {
+  background-color: #b8ebac;
+  transition: all .5s;
+  opacity: 1; }
+
+.paquet button {
+  text-align: center;
+  width: 30px;
+  animation: animacion 2s linear infinite; }
+
+.button__anim:hover {
+  background-color: rgba(93, 158, 77, 0.5);
+  border: 2px solid white;
+  transition: all 0.8s; }
+
+.button__anim a:hover {
+  background-color: rgba(93, 158, 77, 0.5);
+  transition: all 0.8s; }
+
+.final-inicio {
+  line-height: 30px;
+  background-color: #dad8d8;
+  border-top: 2px solid white; }
+
+.final-inicio h3 {
+  font-size: 3vh; }
+
+.final-inicio h4 {
+  font-size: 2.6vh; }
+
+.final-inicio p {
+  font-size: 2.2vh; }
+
+.paquete-tit {
+  background-color: #b8ebac;
+  border-bottom: 3px solid white; }
+
+.fondo-paquetes {
+  background-color: #92cf83; }
+
+.card-img-top {
+  border-radius: 100%; }
+
+.paquetes-cartas {
+  background-color: #92cf83;
+  border: none;
+  padding: 30px; }
+
+.paquetes-cartas:hover {
+  background-color: rgba(255, 255, 255, 0.514);
+  border: 3px solid rgba(255, 255, 255, 0.514); }
+
+/*ACTIVIDADES*/
+.act-fondo {
+  background-color: #b8ebac; }
+
+.carta-bodega {
+  box-shadow: 0 0 30px 0 #30741f; }
+
+.carta-exc {
+  box-shadow: 0 0 30px 0 #30741f; }
+
+.bodegas-tit {
+  background-color: #b8ebac;
+  border: 3px solid white; }
+
+.bodegas-fondo {
+  background-color: #92cf83; }
+
+.bodega-link {
+  color: black; }
+
+.bodega-link:hover {
+  color: black;
+  text-decoration: none;
+  background-color: #dbdbdb;
+  transition: all 0.5s; }
+
+.actividades-tit {
+  background-color: #b8ebac; }
+
+.excursiones-fondo {
+  background-color: #92cf83;
+  border-top: 3px solid white; }
+
+.condiciones {
+  background-color: #dad8d8;
+  border-top: 3px solid white; }
+
+.contacto__fondo {
+  background-color: #c8eec0; }
+
+.contacto {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px; }
+
+.contacto__tit {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 2rem;
+  padding-top: 1rem; }
+
+.contact {
+  box-shadow: 0 0 30px 0 rgba(48, 99, 35, 0.5); }
+
+.contact > * {
+  padding: 1em; }
+
+.formulario {
+  background-color: white; }
+
+.formulario form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.formulario form .block {
+  grid-column: 1 / 3; }
+
+.formulario form p {
+  margin: 0;
+  padding: 1em; }
+
+.formulario form button,
+.formulario form input,
+.formulario form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #2c2c2c;
+  outline: none; }
+
+.contact__info {
+  background-color: #92cf83; }
+
+.contact__info h4,
+.contact__info ul,
+.contact__info p {
+  text-align: center;
+  margin: 0 0 1rem 0; }
+
+.contact__info ul {
+  list-style: none;
+  padding: 0; }
+
+.contact__info ul li {
+  padding: .3em; }
+
+.nosotros-tit {
+  background-color: #b8ebac;
+  border-bottom: 3px solid white; }
+
+.nosotros-fondo {
+  background-color: #92cf83; }
+
+.nosotros h2 {
+  font-size: 3.3vh; }
+
+.nosotros p {
+  font-size: 2.5vh; }
